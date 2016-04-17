@@ -17,16 +17,16 @@ public class Sound {
     public static Sound mutation = new Sound("/mutation.wav", false);
     public static Sound jump = new Sound("/jump.wav", false);
     public static Sound shoot = new Sound("/shoot.wav", false);
-    
+
     public String path;
     public int volumeEffects, volumeMusic;
     public boolean isMusic;
-    
+
     private Sound(String path, boolean isMusic){
         this.path = path;
         this.isMusic = isMusic;
     }
-    
+
     public void play(){
         try{
             URL url = this.getClass().getResource(this.path);
