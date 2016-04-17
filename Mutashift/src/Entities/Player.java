@@ -288,8 +288,6 @@ public class Player extends Entity {
                     (double)((2 * this.posX) + Defines.TILE_SIZE) / 2, 
                     (double)((2 * this.posY) + Defines.TILE_SIZE) / 2);
         }
-        g.setColor(Color.BLACK);
-        g.drawRect((int)this.posX, (int)this.posY, Defines.TILE_SIZE, Defines.TILE_SIZE);
     }
     
     public boolean move(float x, float y){
